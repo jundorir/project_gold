@@ -1,0 +1,96 @@
+.gainWindow {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #000000;
+  font-size: 28px;
+  .gainBox {
+    width: 630px;
+    min-height: 36vh;
+    max-height: 90vh;
+    overflow: auto;
+    background: #333333;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('~@assets/images/icon/windowBGI.png');
+    background-repeat: no-repeat;
+    background-size: 630px 182px;
+    font-family: 'font';
+    padding-bottom: 24px;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    .closeImgBox {
+      margin: 36px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      .closeImg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .describe {
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      .describeTop {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+      .describeBottpm {
+        margin-bottom: 48px;
+        font-size: 24px;
+      }
+    }
+  }
+  .bottomButton {
+    width: 570px;
+    height: 120px;
+    background: #454545;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 30px;
+    padding: 0 26px 0 37px;
+    width: 500px;
+    .title {
+      color: #ffffff;
+      text-align: center;
+      line-height: 80px;
+      // margin-bottom: 15px;
+    }
+    .authorizationBTN,
+    .pledgeBTN {
+      width: 140px;
+      height: 60px;
+      background: linear-gradient(0deg, #ffc16e 1%, #ffdca9 99%);
+      border-radius: 30px;
+      text-align: center;
+      line-height: 60px;
+      color: #1f1f1f;
+      &.disabled {
+        background: #5d5d5d;
+        color: #ffffff30;
+      }
+    }
+  }
+  .line {
+    width: 500px;
+    height: 2px;
+    background: #e6e6e6;
+    margin: auto;
+  }
+}

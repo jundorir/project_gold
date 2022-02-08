@@ -1,0 +1,202 @@
+.contain {
+    width: 100%;
+    font-size: 28px;
+    margin-top: 30px;
+    .inner {
+      width: 678px;
+      margin: auto;
+      .title {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: #ffffff60;
+        .left,
+        .right {
+          .number {
+            font-weight: 600;
+            color: #ffffff;
+            opacity: 1;
+          }
+        }
+        .left {
+          margin-right: 40px;
+          padding-right: 40px;
+          border-right: 1px solid #ffffff30;
+        }
+      }
+      .outerCicle {
+        margin-top: 32px;
+        background-image: url("~@assets/images/home/countdownRed.png");
+        width: 674px;
+        height: 669px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .innerCicle {
+          background-image: url("~@assets/images/home/countdownYellow.png");
+          width: 420px;
+          height: 421px;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          // justify-content: center;
+          align-items: center;
+          .order {
+            font-size: 30px;
+            color: #ffffff60;
+            margin: 100px 0 50px;
+          }
+          .bottom {
+            font-family: "number";
+            // font-weight: bold;
+            .number {
+              font-size: 80px;
+            }
+          }
+        }
+      }
+      .buyBox {
+        margin-top: -30px;
+        width: 100%;
+        background: #98989820;
+        border-radius: 50px 50px 0 0;
+        color: #ffffff;
+        overflow: hidden;
+        .buyBoxTop {
+          overflow: hidden;
+          .title {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 25px 0;
+          }
+          .time {
+            text-align: center;
+            .number {
+              display: inline-block;
+              width: 50px;
+              font-size: 55px;
+              color: #f8ef83;
+              font-family: "number";
+            }
+            .unit {
+              color: #ffffff;
+              opacity: 0.5;
+              margin: 0 30px;
+            }
+          }
+        }
+        .buyBoxBottom {
+          // margin-top: 36px;
+          width: 100%;
+          background: #262626;
+          color: #ffffff;
+          .inner {
+            width: 630px;
+            margin: auto;
+            overflow: hidden;
+            .current {
+              margin-top: 42px;
+              display: flex;
+              color: #fefefe50;
+              .left,
+              .right {
+                width: 50%;
+                .currenttitle {
+                  margin-bottom: 18px;
+                }
+                .number {
+                  font-size: 36px;
+                  font-family: "font";
+                  font-weight: 500;
+                  color: #fefefe;
+                  margin-right: 8px;
+                }
+                .unit {
+                  font-size: 24px;
+                }
+              }
+              .right {
+                padding-left: 28px;
+                border-left: 1px solid #ffffff30;
+              }
+            }
+            .inputNum {
+              width: 100%;
+              height: 100px;
+              background: #000000;
+              border: 1px solid #ffffff30;
+              border-radius: 30px;
+              margin: 40px 0;
+              display: flex;
+              align-items: center;
+              .input {
+                background: none;
+                outline: none;
+                border: none;
+                color: #ffffff;
+                margin-left: 40px;
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                }
+              }
+            }
+            .balance {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 40px;
+              .left {
+                font-size: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #ffffff50;
+                .leftNumber {
+                  color: #ffffff;
+                  font-family: "font";
+                }
+              }
+              .right {
+                display: flex;
+                justify-content: space-between;
+                .biggest,
+                .smallest {
+                  width: 165px;
+                  height: 80px;
+                  border: 1px solid #ffffff30;
+                  border-radius: 30px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-left: 15px;
+                }
+              }
+            }
+            .button {
+              // margin-bottom: 96px;
+              width: 100%;
+              height: 110px;
+              background: linear-gradient(0deg, #ffc16e 1%, #ffdca9 99%);
+              border-radius: 55px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 30px;
+              font-weight: 500;
+              color: #171717;
+            }
+            .info {
+              width: 100%;
+              text-align: center;
+              margin: 24px 0 44px;
+              font-size: 24px;
+              font-weight: 400;
+              color: #fefefe;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,269 @@
+.contain {
+  width: 100%;
+  font-size: 28px;
+  // margin-top: 40px;
+  .inner {
+    width: 678px;
+    margin: auto;
+    .gain {
+      background: #262626;
+      background-image: url("~@assets/images/home/homeBGI.png");
+      width: 678px;
+      border-radius: 50px;
+      background-size: 678px 230px;
+      background-repeat: no-repeat;
+      color: #1f1f1f;
+      margin-bottom: 28px;
+      padding-bottom: 46px;
+      .gainInner {
+        width: 630px;
+        height: 230px;
+        margin: 38px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .gainLeft {
+          .gainLeftTitle {
+            display: flex;
+            align-items: center;
+            user-select: none;
+            .explain {
+              vertical-align: middle;
+              width: 26px;
+              height: 26px;
+              display: inline-block;
+              background-image: url("~@assets/images/home/explain.png");
+              background-size: 26px 26px;
+              margin-left: 12px;
+            }
+          }
+          .willGain {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            .willGainNum {
+              font-size: 55px;
+              font-weight: 500;
+              display: inline-block;
+              font-family: "font";
+              max-width: 300px;
+              overflow: auto;
+            }
+            .willGainUnit {
+              font-size: 30px;
+              opacity: 0.67;
+              margin-left: 10px;
+              margin-top: 16px;
+            }
+          }
+          .equal {
+            font-size: 25px;
+            color: #fefefe;
+            width: 167px;
+            height: 42px;
+            background: #00000020;
+            border-radius: 21px;
+            line-height: 42px;
+            padding-left: 22px;
+            font-family: "font";
+          }
+        }
+        .gainRight {
+          width: 180px;
+          height: 80px;
+          background: #262626;
+          border: 1px solid #000000;
+          border-radius: 39px;
+          color: #fefefe;
+          text-align: center;
+          line-height: 80px;
+        }
+      }
+      .gainBottom,
+      .team {
+        color: #fefefe;
+        width: 630px;
+        margin: 38px 24px;
+        display: flex;
+        .willGet,
+        .alreadyGet {
+          width: 50%;
+          border-bottom: 1px solid #ffffff30;
+          .innerLeft,
+          .innerRight {
+            text-align: right;
+            .top {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              .topImg,
+              .topImg_teamReturns {
+                background-image: url("~@assets/images/home/staticGains.png");
+                width: 68px;
+                height: 68px;
+                background-size: cover;
+                margin-right: 16px;
+              }
+              .topTitle {
+                white-space: nowrap;
+              }
+              .topImg_teamReturns {
+                background-image: url("~@assets/images/home/straightEarnings.png");
+              }
+            }
+            .bottom {
+              margin-top: 22px;
+              .bottomNum {
+                color: #fff9ad;
+                font-size: 36px;
+                font-family: "font";
+              }
+            }
+          }
+          .innerLeft {
+            margin-right: 90px;
+          }
+        }
+        .alreadyGet {
+          height: 150px;
+          border-left: 1px solid #ffffff30;
+        }
+        .teamInner {
+          width: 630px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .top {
+            display: flex;
+            align-items: center;
+            .topImg {
+              background-image: url("~@assets/images/home/capital.png");
+              width: 68px;
+              height: 68px;
+              background-size: cover;
+              margin-right: 16px;
+            }
+          }
+          .bottom {
+            margin-top: 22px;
+            .bottomNum {
+              color: #fff9ad;
+              font-size: 36px;
+              font-family: "font";
+            }
+          }
+        }
+      }
+      .earningsRecord {
+        width: 630px;
+        height: 80px;
+        border: 1px solid #ffffff30;
+        border-radius: 39px;
+        margin: auto;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    // 立即认购
+    .buyBox {
+      width: 678px;
+      background: #262626;
+      border-radius: 50px;
+      overflow: hidden;
+      margin-bottom: 100px;
+      .buyInner {
+        margin: 56px 24px 42px;
+        .bottomBorder {
+          width: 100%;
+          height: 1px;
+          background: #ffffff;
+          opacity: 0.3;
+          margin: 40px 0;
+        }
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 500;
+          margin-bottom: 12px;
+          .left {
+            .nper {
+              color: #fff9ad;
+            }
+          }
+          .right {
+            color: #fff9ad;
+          }
+        }
+        .line {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .left {
+            color: #fefefe;
+            opacity: 0.5;
+          }
+          .right {
+            .number {
+            }
+            .unit {
+              opacity: 0.5;
+              font-size: 24px;
+              margin-left: 12px;
+            }
+            .timeunit {
+              opacity: 0.5;
+              font-size: 24px;
+              margin: 0 20px 0 12px;
+            }
+          }
+        }
+        .figure {
+          width: 100%;
+          height: 22px;
+          background: #ffffff10;
+          border-radius: 10px;
+          margin: 45px 0 64px;
+          .rate {
+            width: 0;
+            height: 22px;
+            background: #fff9ad;
+            border-radius: 10px;
+            z-index: 999;
+          }
+        }
+        .buy {
+          width: 100%;
+          height: 110px;
+          background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+          border-radius: 55px;
+          font-size: 30px;
+          font-weight: 500;
+          color: #171717;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .jump {
+          display: flex;
+          justify-content: space-between;
+          .record {
+            height: 110px;
+            width: 300px;
+            border: 1px solid #fff9ad;
+            color: #ffffff;
+            margin: 40px 0 42px;
+            border-radius: 55px;
+            font-size: 30px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

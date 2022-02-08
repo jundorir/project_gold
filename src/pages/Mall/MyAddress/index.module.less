@@ -1,0 +1,110 @@
+.contain {
+  width: 100%;
+  font-size: 28px;
+  margin-top: 46px;
+  .inner {
+    width: 678px;
+    margin: auto;
+    // padding-bottom: 260px;
+    .address {
+      height: 68vh;
+      overflow: auto;
+      .box {
+        width: 678px;
+        height: 198px;
+        background: #262626;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .boxInner {
+          margin: 48px 24px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .left {
+            .top {
+              display: flex;
+              align-items: center;
+              margin-bottom: 22px;
+              font-size: 30px;
+              font-weight: 500;
+              color: #fffefe;
+              .topName {
+                width: 120px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              .topTel {
+                margin: 0 18px 0 30px;
+              }
+              .topTag {
+                width: 73px;
+                height: 36px;
+                border: 1px solid #e8c18d;
+                border-radius: 18px;
+                font-size: 20px;
+                font-weight: 400;
+                color: #fff9ad;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.default {
+                  border: none;
+                  background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+                  border-radius: 18px;
+                  color: #1f1f1f;
+                }
+              }
+            }
+            .bottom {
+              font-size: 24px;
+              color: #fffefe;
+              opacity: 0.5;
+              width: 350px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              word-break: break-all;
+            }
+          }
+          .right {
+            .modify {
+              width: 39px;
+              height: 42px;
+            }
+          }
+        }
+      }
+      .noAddress {
+        background-image: url("~@assets/images/mall/noAddress.png");
+        width: 348px;
+        height: 175px;
+        margin: 310px auto 62px;
+        background-size: cover;
+        background-position: center;
+      }
+      .word {
+        font-size: 30px;
+        color: #efcfa2;
+        opacity: 0.3;
+        text-align: center;
+      }
+    }
+    .buton {
+      width: 678px;
+      height: 110px;
+      background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+      border-radius: 55px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #171717;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 55px;
+      z-index: 9;
+    }
+  }
+}

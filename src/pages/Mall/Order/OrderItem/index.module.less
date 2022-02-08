@@ -1,0 +1,185 @@
+.orderItem {
+  width: 100%;
+  //   min-height: 650px;
+  min-height: 530px;
+  background: #262626;
+  border-radius: 50px;
+  margin-bottom: 40px;
+
+  .orderItemPaddingBox {
+    padding: 0 24px;
+    box-sizing: border-box;
+
+    .round {
+      font-size: 30px;
+      color: #fefefe;
+      line-height: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: 138px;
+      align-items: center;
+      .border();
+      .left {
+        display: flex;
+        font-weight: 500;
+
+        .emphasize {
+          color: #fff9ad;
+          margin: 0 10px;
+        }
+      }
+      .right {
+        font-size: 28px;
+        color: #fff9ad;
+      }
+    }
+
+    .goods {
+      color: #fefefe;
+      font-size: 24px;
+      line-height: 24px;
+      display: flex;
+      height: 178px;
+      align-items: center;
+      .border();
+      .imgBox {
+        width: 120px;
+        height: 120px;
+        background: #343434;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        .img {
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+        }
+      }
+      .info {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          font-size: 30px;
+        }
+        .middle {
+          .alphaText {
+            margin-right: 25px;
+          }
+        }
+        .bottom {
+          .alphaText {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+
+    .payInfo {
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .priceText {
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff9ad;
+        margin: 0 32px;
+        // line-height: 36px;
+      }
+    }
+  }
+
+  .addressInfo {
+    padding: 0 24px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 102px;
+    overflow: hidden;
+    transition: height 0.15s linear 0s;
+    &.open {
+      // height: 240px;
+      height: auto;
+    }
+    .tips {
+      height: 105px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .showAddress {
+        .alphaText();
+        display: flex;
+        align-items: center;
+        .triangle {
+          margin-left: 15px;
+          transition: transform 0.15s linear;
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .operation {
+        display: flex;
+      }
+
+      .showLogistics {
+        .button();
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: transparent;
+      }
+
+      .submitReceive {
+        .button();
+        color: #1f1f1f;
+        margin-left: 15px;
+      }
+    }
+    .userInfo {
+      font-size: 30px;
+      display: flex;
+      margin-bottom: 23px;
+      line-height: 30px;
+
+      .name {
+        font-weight: 500;
+        margin-right: 60px;
+      }
+    }
+    .addressDetail {
+      .alphaText();
+      word-break: break-all;
+      margin: 20px 0 30px;
+    }
+  }
+
+  .border {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /*no*/
+  }
+
+  .alphaText {
+    color: rgba(254, 254, 254, 0.5);
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .button {
+    width: 150px;
+    line-height: 60px;
+    border-radius: 31px;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

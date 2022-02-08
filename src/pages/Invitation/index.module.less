@@ -1,0 +1,93 @@
+.invitation {
+  width: 100%;
+  height: 100%;
+
+  .topBox {
+    height: 816px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("~@assets/images/invitation/banner.jpg");
+  }
+
+  .qrCodeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    .code {
+      width: 286px;
+      height: 286px;
+      background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+      .qr {
+        width: 256px !important;
+        height: 256px !important;
+        margin: 15px;
+      }
+    }
+    .scan {
+      font-size: 28px;
+      color: #ffffff;
+      position: absolute;
+      bottom: -60px;
+    }
+  }
+
+  .copyBox {
+    padding: 0 36px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    .copyBoxInner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 480px;
+      background: #262626;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      .tips {
+        font-size: 28px;
+        line-height: 28px;
+        color: #fff9ad;
+        margin-top: 60px;
+      }
+      .link {
+        margin-top: 60px;
+        width: 630px;
+        color: #fff;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: bold;
+        word-break: break-all;
+      }
+      .copy {
+        width: 630px;
+        height: 110px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 50px;
+        line-height: 110px;
+        margin-top: 60px;
+        // margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-height: 800px) {
+  .invitation {
+    .copyBox {
+      .copyBoxInner {
+        height: 410px;
+      }
+    }
+  }
+}

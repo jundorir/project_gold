@@ -1,0 +1,65 @@
+.crowdFunding {
+  padding: 0 36px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 26px;
+
+  .header {
+    height: 80px;
+    background: #262626;
+    border-radius: 10px;
+    display: flex;
+    // padding: 0 25px;
+    box-sizing: border-box;
+    line-height: 80px;
+    // justify-content: space-between;
+    margin-top: 36px;
+    .round {
+      width: 118px;
+      padding-left: 25px;
+    }
+    .price {
+      width: 400px;
+      text-align: center;
+    }
+    .time {
+      width: 160px;
+      padding-right: 25px;
+      text-align: right;
+    }
+  }
+
+  .list {
+    .item {
+      height: 112px;
+      line-height: 112px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); /*no*/
+      display: flex;
+      //   justify-content: space-between;
+      text-align: center;
+
+      .round {
+        width: 118px;
+        display: flex;
+
+        .number {
+          color: #fff;
+          margin: 0 10px;
+        }
+      }
+      .price {
+        width: 400px;
+        display: flex;
+        justify-content: end;
+        padding-right: 80px;
+        box-sizing: border-box;
+        .amount {
+          color: #fff9ad;
+          margin-right: 10px;
+        }
+      }
+      .time {
+        width: 160px;
+      }
+    }
+  }
+}

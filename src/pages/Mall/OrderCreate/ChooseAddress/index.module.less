@@ -1,0 +1,93 @@
+.chooseAddress {
+  width: 100%;
+  padding: 0 36px;
+  box-sizing: border-box;
+  .list {
+    height: 75vh;
+    margin-top: 20px;
+    overflow: auto;
+    .item {
+      min-height: 200px;
+      display: flex;
+      justify-content: space-between;
+      background: #262626;
+      border-radius: 50px;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 0 29px 0 22px;
+      .left {
+        width: 420px;
+
+        .top {
+          display: flex;
+          font-size: 30px;
+          color: #fffefe;
+          align-items: center;
+          height: 40px;
+          .name {
+            font-weight: bold;
+          }
+          .tel {
+            margin-left: 70px;
+            margin-right: 18px;
+          }
+          .tag {
+            width: 73px;
+            line-height: 40px;
+            border-radius: 18px;
+            border: 1px solid #e8c18d; /*no*/
+            color: #fff9ad;
+            box-sizing: content-box;
+            text-align: center;
+            font-size: 24px;
+            &.default {
+              background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+              color: #1f1f1f;
+              border: none;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 23px;
+          font-size: 24px;
+          font-weight: 400;
+          color: rgba(255, 254, 254, 0.5);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-break: break-all;
+        }
+      }
+      .right {
+        width: 36px;
+        height: 36px;
+        // background: #262626;
+        border: 1px solid #ecc99a; /*no*/
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .circular {
+          width: 24px;
+          height: 24px;
+          background: #eae59f;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .submit {
+    width: 678px;
+    height: 110px;
+    line-height: 110px;
+    background: linear-gradient(0deg, #ddaf72 1%, #f3d6ab 100%);
+    border-radius: 55px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #171717;
+    position: fixed;
+    bottom: 0;
+    bottom: 70px;
+  }
+}

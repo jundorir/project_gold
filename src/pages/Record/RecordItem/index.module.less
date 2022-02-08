@@ -1,0 +1,77 @@
+.recordItemBox {
+  padding: 0 36px;
+
+  .recordItem {
+    width: 100%;
+    // height: 615px;
+    background: #262626;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    .round {
+      font-size: 30px;
+      color: #fefefe;
+      line-height: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: 138px;
+      align-items: center;
+      .border();
+      .left {
+        display: flex;
+        font-weight: 500;
+
+        .emphasize {
+          color: #fff9ad;
+          margin: 0 10px;
+        }
+      }
+      .right {
+        font-size: 28px;
+        color: #fff9ad;
+        &.redWord {
+          color: #ed5353;
+        }
+      }
+    }
+
+    .line {
+      color: rgba(254, 254, 254, 0.5);
+      font-size: 28px;
+      line-height: 28px;
+      display: flex;
+      justify-content: space-between;
+      height: 135px;
+      align-items: center;
+      // .border();
+      .right {
+        display: flex;
+        align-items: baseline;
+        .price {
+          color: #fefefe;
+        }
+        .symbol {
+          font-size: 24px;
+          line-height: 24px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .tips {
+      font-size: 24px;
+      line-height: 24px;
+      color: #ed5353;
+      display: flex;
+      align-items: center;
+      height: 135px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .border {
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); /*no*/
+    }
+  }
+}

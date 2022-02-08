@@ -1,0 +1,72 @@
+.recommendRewardItem {
+  width: 100%;
+  height: 555px;
+  background: #262626;
+  border-radius: 50px;
+  margin-top: 40px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  .type {
+    font-size: 30px;
+    color: #fff9ad;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 138px;
+    align-items: center;
+    .left {
+      color: #fefefe;
+      font-weight: 500;
+    }
+    .right {
+      font-size: 28px;
+    }
+  }
+
+  .line {
+    color: rgba(254, 254, 254, 0.5);
+    font-size: 26px;
+    line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+    height: 138px;
+    align-items: center;
+    .border();
+    .right {
+      &.noAlpha {
+        color: #fefefe;
+      }
+    }
+
+    .item {
+      width: 50%;
+
+      &.right {
+        padding-left: 45px;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+      }
+
+      .bottom {
+        font-size: 24px;
+        color: #fefefe;
+        line-height: 24px;
+        display: flex;
+        margin-top: 22px;
+        color: rgba(254, 254, 254, 0.5);
+        align-items: baseline;
+        .amount {
+          font-size: 30px;
+          line-height: 30px;
+          color: #fefefe;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .border {
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /*no*/
+  }
+}
